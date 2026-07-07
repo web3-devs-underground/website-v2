@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>web3devs.org — Israel's Largest Hub for Web3 Developers and Builders</title>
+<meta name="description" content="Israel's largest developer-led Web3 community — meetups, talks, and 3,200+ builders. Connect. Learn. Build.">
+<meta name="theme-color" content="#0e0e0e">
+<link rel="canonical" href="https://web3devs.org/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Web3 Devs Underground">
+<meta property="og:title" content="Web3 Devs Underground — Israel's Largest Hub for Web3 Developers">
+<meta property="og:description" content="Israel's largest developer-led Web3 community — meetups, talks, and 3,200+ builders. Connect. Learn. Build.">
+<meta property="og:url" content="https://web3devs.org/">
+<meta property="og:image" content="https://web3devs.org/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Web3 Devs Underground — Israel's Largest Hub for Web3 Developers & Builders">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@Web3_Devs">
+<meta name="twitter:title" content="Web3 Devs Underground — Israel's Largest Hub for Web3 Developers">
+<meta name="twitter:description" content="Israel's largest developer-led Web3 community — meetups, talks, and 3,200+ builders. Connect. Learn. Build.">
+<meta name="twitter:image" content="https://web3devs.org/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://web3devs.org/#organization",
+  "name": "Web3 Devs Underground",
+  "alternateName": "Israel Web3 Developers Underground",
+  "url": "https://web3devs.org/",
+  "logo": "https://web3devs.org/logo-united.svg",
+  "image": "https://web3devs.org/og-image.png",
+  "description": "Israel's largest developer-led Web3 community — meetups, talks and 3,200+ builders. Connect. Learn. Build.",
+  "email": "web3devsunderground@gmail.com",
+  "foundingDate": "2020",
+  "areaServed": "Israel",
+  "founder": [
+    {
+      "@type": "Person",
+      "name": "Roy Osherove"
+    },
+    {
+      "@type": "Person",
+      "name": "Shauli Rejwan"
+    }
+  ],
+  "sameAs": [
+    "https://x.com/Web3_Devs",
+    "https://www.youtube.com/@web3devsunderground",
+    "https://www.linkedin.com/company/israel-web3-developer-underground/",
+    "https://luma.com/web3devs_underground",
+    "https://www.meetup.com/israel-web3-developer-underground/",
+    "https://t.me/+-sEflgfrqDoyYWVk"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Web3 Devs Underground",
+  "url": "https://web3devs.org/",
+  "publisher": {
+    "@id": "https://web3devs.org/#organization"
+  }
+}
+</script>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0e0e0e;
+    --ink:#f4f2ef;
+    --muted:#908f8e;
+    --red:#FF1516;
+    --yellow:#f8db4c;
+    --ph:#e8e8e8;
+    --ph-2:#b9b9b9;
+    --ph-3:#a2a2a2;
+    --ph-4:#8b8b8b;
+    --ph-border:#bdbdbd;
+    --ph-text:#999;
+    --line:rgba(255,255,255,.08);
+    --acc:#f8db4c;
+    --disp:'Space Grotesk', sans-serif;
+    --body:'Inter', sans-serif;
+    --mono:'JetBrains Mono', monospace;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  html,body{margin:0;padding:0;}
+  body{background:var(--bg);color:var(--ink);font-family:var(--body);overflow-x:hidden;}
+  a{color:inherit;text-decoration:none;}
+
+  .page{position:relative;overflow-x:clip;}
+  @supports not (overflow:clip){ .page{overflow-x:hidden;} }
+  .layer{position:relative;z-index:1;}
+
+  /* ---- decorative blur blobs ---- */
+  .blobs{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0;}
+  .blob{position:absolute;border-radius:50%;filter:blur(120px);}
+  .blob-1{width:min(802px,56vw);height:min(716px,50vw);right:-24vw;top:-22vw;
+    background:radial-gradient(circle at 50% 50%, rgba(255,21,22,.55), rgba(255,21,22,0) 70%);}
+  .blob-2{width:min(918px,64vw);height:min(906px,63vw);left:20vw;top:25vw;
+    background:radial-gradient(circle at 50% 50%, rgba(255,21,22,.40), rgba(255,21,22,0) 70%);}
+  .blob-3{width:min(669px,46vw);height:min(660px,46vw);left:-21vw;top:100vw;
+    background:radial-gradient(circle at 50% 50%, rgba(255,21,22,.40), rgba(255,21,22,0) 70%);}
+  .blob-4{width:min(669px,46vw);height:min(660px,46vw);right:-12vw;top:122vw;
+    background:radial-gradient(circle at 50% 50%, rgba(255,21,22,.40), rgba(255,21,22,0) 70%);}
+
+  /* ---- nav ---- */
+  .nav{position:sticky;top:0;z-index:100;width:100%;
+    background:rgba(14,14,14,.92);
+    border-bottom:1px solid var(--line);}
+  .nav-inner{max-width:1179px;margin:0 auto;padding:16px 24px;
+    display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:18px;}
+  .nav-inner > .logo{justify-self:start;}
+  .nav-inner > .nav-links{justify-self:center;}
+  .nav-inner > .nav-right{justify-self:end;}
+  /* big desktop: menu spans the width with a 130px gutter each side */
+  @media (min-width:1440px){ .nav-inner{max-width:none;padding-left:130px;padding-right:130px;} }
+  .logo{display:flex;align-items:center;gap:18px;flex:none;text-decoration:none;}
+  .logo .logo-mark{height:52px;width:auto;display:block;}
+  .logo-powered{display:flex;flex-direction:column;justify-content:center;gap:3px;line-height:1;}
+  .pb-label{font-family:var(--body);font-weight:400;font-size:9px;letter-spacing:.02em;color:#8a8987;white-space:nowrap;}
+  .pb-mk{height:18px;width:auto;display:block;}
+  .nav-links{display:flex;align-items:center;gap:clamp(20px,3vw,42px);font-family:var(--disp);font-weight:400;font-size:16px;color:var(--ink);}
+  .nav-links > a{transition:color .16s ease;}
+  .nav-links > a:hover{color:#908F8E;}
+  .nav-right{display:flex;align-items:center;gap:24px;}
+  .nav-social{display:inline-flex;align-items:center;gap:6px;}
+  .nav-social-mobile{display:none;}
+  .nav-links.nofade{-webkit-mask-image:none!important;mask-image:none!important;}
+  .nsoc{display:flex;align-items:center;justify-content:center;width:32px;height:32px;color:#f4f2ef;opacity:.82;transition:opacity .16s ease;}
+  .nsoc:hover{opacity:1;}
+  .nsoc svg{width:20px;height:20px;display:block;fill:currentColor;}
+
+  /* ---- buttons ---- */
+  .btn{display:inline-flex;align-items:center;justify-content:center;border-radius:14px;
+    font-family:var(--body);font-weight:500;font-size:17px;line-height:1;white-space:nowrap;cursor:pointer;border:0;
+    transition:background-color .16s cubic-bezier(.16,.84,.34,1), border-color .16s cubic-bezier(.16,.84,.34,1), color .16s ease, box-shadow .16s ease;}
+  .btn-red{background:var(--red);color:var(--ink);}
+  .btn-outline{background:transparent;color:var(--yellow);border:1px solid var(--yellow);}
+  /* hover: accent/border shift only, no movement */
+  .btn-red:hover{background:#ff3b3c;}
+  .btn-outline:hover{border-color:#fbe680;color:#fbe680;
+    box-shadow:0 0 0 1px rgba(248,219,76,.35), 0 0 16px rgba(248,219,76,.22);}
+  .btn:active{transform:scale(.98);}
+  .btn-red:focus-visible{outline:2px solid var(--yellow);outline-offset:2px;}
+  .btn-outline:focus-visible{outline:2px solid var(--yellow);outline-offset:2px;}
+  @media (prefers-reduced-motion: reduce){ .btn{transition:none;} }
+  .pad-lg{padding:14px 24px;}
+  .pad-sm{padding:10px 20px;}
+
+  /* ---- hero ---- */
+  .hero{padding:88px 24px 0;position:relative;z-index:1;}
+  .hero-head{max-width:1179px;margin:0 auto;text-align:center;}
+  .h-line{font-family:var(--disp);font-weight:500;font-size:clamp(26px,6vw,62px);line-height:1.12;
+    letter-spacing:-0.06em;color:var(--ink);}
+  .h-2{padding-left:0;}
+  .h3row{display:flex;align-items:flex-end;justify-content:center;gap:52px;padding-left:0;}
+  .h3row .h-3{white-space:nowrap;}
+  .tagline{font-family:var(--disp);font-weight:400;font-size:clamp(15px,1.7vw,22px);
+    letter-spacing:-0.04em;color:var(--muted);white-space:nowrap;padding-bottom:10px;}
+  .hero-cta{margin-top:40px;display:flex;gap:25px;align-items:center;justify-content:center;flex-wrap:wrap;}
+
+  /* ---- hero load animation (kinetic reveal, after tlb.betteroff.studio) ---- */
+  @keyframes heroRise{
+    0%{transform:translate(var(--tx,0px),26px);filter:blur(6px);opacity:0;}
+    100%{transform:translate(var(--tx,0px),0);filter:blur(0);opacity:1;}
+  }
+  .hero .h-line,.hero .tagline,.hero .hero-cta{opacity:0;will-change:transform,filter;}
+  .hero .h-line{animation:heroRise .85s cubic-bezier(.16,.84,.34,1) forwards;}
+  .hero .h-1{animation-delay:.08s;}
+  .hero .h-2{animation-delay:.20s;}
+  .hero .h-3{animation-delay:.32s;}
+  .hero .tagline{animation:heroRise .8s cubic-bezier(.16,.84,.34,1) .44s forwards;}
+  .hero .hero-cta{animation:heroRise .8s cubic-bezier(.16,.84,.34,1) .54s forwards;}
+
+  /* ---- living backdrop: slow blob drift ---- */
+  @keyframes blobDrift1{0%,100%{transform:translate(0,0) scale(1);}50%{transform:translate(-3vw,2vw) scale(1.08);}}
+  @keyframes blobDrift2{0%,100%{transform:translate(0,0) scale(1);}50%{transform:translate(2.4vw,-1.6vw) scale(1.06);}}
+  .blob-1{animation:blobDrift1 26s ease-in-out infinite;}
+  .blob-2{animation:blobDrift2 32s ease-in-out infinite;}
+  .blob-3{animation:blobDrift2 30s ease-in-out infinite;}
+  .blob-4{animation:blobDrift1 34s ease-in-out infinite;}
+
+  @media (prefers-reduced-motion: reduce){
+    .hero .h-line,.hero .tagline,.hero .hero-cta{opacity:1;animation:none;filter:none;}
+    .hero .tagline,.hero .hero-cta{transform:none;}
+    .blob-1,.blob-2,.blob-3,.blob-4{animation:none;}
+  }
+  @media (min-width:1100px){
+    .h-1{--tx:-95px;transform:translateX(-95px);}
+    .h-2{--tx:95px;transform:translateX(95px);}
+  }
+
+  /* ---- scroll reveal (nav menu + stats + section heads) ---- */
+  .reveal{opacity:0;transform:translateY(24px);filter:blur(6px);
+    transition:opacity .7s cubic-bezier(.16,.84,.34,1), transform .7s cubic-bezier(.16,.84,.34,1), filter .7s ease;}
+  .reveal.in{opacity:1;transform:none;filter:none;}
+  .stats .stat.reveal:nth-child(2){transition-delay:.08s;}
+  .stats .stat.reveal:nth-child(3){transition-delay:.16s;}
+  .stats .stat.reveal:nth-child(4){transition-delay:.24s;}
+  .nav .nav-links a.reveal:nth-child(2){transition-delay:.06s;}
+  .nav .nav-links a.reveal:nth-child(3){transition-delay:.12s;}
+  .nav .nav-links a.reveal:nth-child(4){transition-delay:.18s;}
+  .nav .nav-links a.reveal:nth-child(5){transition-delay:.24s;}
+  @media (prefers-reduced-motion: reduce){
+    .reveal{opacity:1;transform:none;filter:none;transition:none;}
+  }
+
+  /* ---- stats ---- */
+  .stats{margin:0 auto;max-width:1180px;padding:82px 24px;
+    display:flex;gap:clamp(20px,3vw,40px);row-gap:34px;justify-content:center;flex-wrap:wrap;
+    text-align:center;font-family:var(--disp);color:var(--ink);position:relative;z-index:1;}
+  .stat{display:flex;flex-direction:column;gap:5px;align-items:center;width:196px;}
+  .stat .num{font-weight:500;font-size:clamp(30px,3.4vw,42px);letter-spacing:-0.06em;}
+  .stat .lbl{font-weight:500;font-size:clamp(15px,1.6vw,20px);letter-spacing:-0.06em;}
+
+  /* ---- sections / bands ---- */
+  .band{width:100%;max-width:1440px;margin:0 auto;
+    padding:82px clamp(20px,5.7vw,82px);
+    display:flex;flex-direction:column;gap:24px;align-items:center;position:relative;z-index:1;}
+  .band-head{max-width:426px;text-align:center;display:flex;flex-direction:column;gap:12px;align-items:center;font-family:var(--disp);}
+  .band-head .t1{font-weight:500;font-size:clamp(26px,6vw,62px);letter-spacing:-0.06em;line-height:1.04;color:var(--ink);}
+  .band-head .t2{font-weight:400;font-size:17pt;color:#908F8E;}
+  #meetus .band-head .t2{font-weight:500;color:#F4F2EF;}
+  .band-head .t3{font-weight:400;font-size:17pt;color:#908F8E;}
+  .band-body{display:flex;flex-direction:column;gap:50px;align-items:center;width:100%;}
+  .ph-box{background:var(--ph);border:1px solid var(--ph-border);display:flex;align-items:center;
+    justify-content:center;color:var(--ph-text);font-size:12px;}
+  .sponsor-logo{width:min(420px,72%);height:auto;display:block;opacity:.9;
+    margin:clamp(34px,5.5vw,68px) 0;transition:opacity .2s ease;}
+  .sponsor-logo:hover{opacity:1;}
+
+  /* ---- Meet Us: upcoming events from Luma ---- */
+  .ev-grid{width:100%;display:flex;flex-wrap:wrap;justify-content:center;gap:24px;}
+  .meetus-pin{display:contents;}
+  .ev-card{display:flex;flex-direction:column;flex:0 1 352px;border-radius:8px;overflow:hidden;
+    border:1px solid var(--line);background:linear-gradient(150deg,#222,#1a1a1a);
+    box-shadow:0 24px 60px rgba(0,0,0,.5);transition:transform .2s ease, border-color .2s ease;}
+  .ev-card:hover{transform:translateY(-3px);border-color:rgba(248,219,76,.4);}
+  .ev-cover{aspect-ratio:1/1;background:#161616;overflow:hidden;}
+  .ev-cover img{width:100%;height:100%;object-fit:cover;display:block;}
+  .ev-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;}
+  .ev-date{font-family:var(--mono);font-size:12px;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--yellow);}
+  .ev-name{font-family:var(--disp);font-weight:500;font-size:20px;letter-spacing:-0.02em;
+    color:var(--ink);line-height:1.3;}
+  .ev-loc{font-family:var(--mono);font-size:11px;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--muted);}
+  .ev-empty{font-family:var(--mono);font-size:13px;letter-spacing:.06em;color:var(--muted);
+    text-transform:uppercase;padding:32px;text-align:center;grid-column:1/-1;}
+
+  /* ---- Our Speakers: rotating sphere of placeholder cards ---- */
+  .speakers-sphere{position:relative;width:min(900px,100%);height:clamp(380px,56vw,540px);z-index:1;
+    touch-action:pan-y;cursor:grab;}
+  .speakers-sphere:active{cursor:grabbing;}
+  @media (min-width:1100px){ .speakers-sphere{width:min(1240px,96vw);} }
+  .sphere-field{position:absolute;left:50%;top:50%;width:0;height:0;}
+  .s-card{position:absolute;left:0;top:0;border-radius:8px;border:1px solid rgba(255,255,255,.08);
+    background:linear-gradient(150deg,#222,#1c1c1c);box-shadow:0 14px 34px rgba(0,0,0,.45);
+    will-change:transform,opacity,filter;backface-visibility:hidden;pointer-events:none;overflow:hidden;
+    display:flex;align-items:center;justify-content:center;}
+  .s-ph{position:relative;width:100%;height:100%;display:flex;align-items:center;justify-content:center;}
+  .s-ph svg{width:34%;max-width:54px;height:auto;opacity:.5;color:#6b6b6b;}
+  .s-idx{position:absolute;left:9px;top:7px;font-size:10px;letter-spacing:.04em;color:#6b6b6b;
+    font-variant-numeric:tabular-nums;font-family:var(--mono);}
+  /* speaker company logos on the sphere — img sits over a name fallback, with
+     extra left/right padding filled by the card's (logo's) own background colour */
+  .s-card.s-logo{display:block;}
+  .s-card.s-logo img{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+    max-width:78%;max-height:50%;width:auto;height:auto;display:block;}
+  .s-card .s-name{position:absolute;inset:0;display:none;align-items:center;justify-content:center;
+    text-align:center;padding:0 8px;font-family:var(--disp);font-weight:600;font-size:13px;
+    letter-spacing:-0.01em;color:rgba(255,255,255,.92);}
+
+  /* ---- previous events: interactive timeline gallery ---- */
+  .prev{width:100%;max-width:1440px;margin:0 auto;padding:82px 0;
+    display:flex;flex-direction:column;gap:24px;align-items:center;position:relative;z-index:1;}
+  .prev .band-head{padding:0 20px;}
+  .prev .band-head .t1{white-space:nowrap;}
+  .stage{position:relative;width:100vw;margin-left:calc(50% - 50vw);height:clamp(440px,66vh,640px);overflow:hidden;
+    touch-action:pan-y;cursor:grab;outline:none;
+    background:radial-gradient(120% 90% at 50% 40%, rgba(255,255,255,.04), rgba(255,255,255,0) 60%);}
+  .stage.dragging{cursor:grabbing;}
+  .lane{position:absolute;left:0;top:0;height:100%;will-change:transform;}
+  .tl-card{position:absolute;left:0;top:0;will-change:transform;}
+  .tl-card .media{
+    position:relative;width:100%;height:100%;border-radius:14px;overflow:hidden;
+    border:1px solid var(--line);background:linear-gradient(150deg,#222,#1a1a1a);
+    box-shadow:0 24px 60px rgba(0,0,0,.5);
+    transform-origin:center center;will-change:transform;backface-visibility:hidden;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .tl-card .media svg{width:30%;max-width:64px;opacity:.45;color:#6b6b6b;}
+  .tl-card .media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;
+    -webkit-user-drag:none;user-select:none;}
+  .tl-card .idx{position:absolute;left:11px;top:9px;font-family:var(--mono);font-size:11px;
+    letter-spacing:.04em;color:#6b6b6b;}
+  .tl-card .cap{
+    position:absolute;left:11px;bottom:11px;font-family:var(--mono);font-size:11px;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--ink);background:rgba(0,0,0,.55);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+    padding:5px 9px;border-radius:6px;opacity:0;transform:translateY(6px);
+    transition:opacity .28s ease, transform .28s ease;pointer-events:none;white-space:nowrap;
+  }
+  .tl-card:hover .cap, .tl-card .cap.show{opacity:1;transform:translateY(0);}
+  .ruler{position:absolute;left:0;right:0;bottom:0;height:96px;overflow:hidden;
+    border-top:1px solid var(--line);
+    background:linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,.35));}
+  .ruler-track{position:absolute;left:0;bottom:34px;height:34px;will-change:transform;
+    background-image:repeating-linear-gradient(90deg, rgba(244,242,239,.16) 0 1px, transparent 1px 16px);
+    background-position:left bottom;background-repeat:repeat-x;background-size:auto 12px;}
+  .tick{position:absolute;bottom:0;width:2px;transform:translateX(-1px);border-radius:1px;
+    background:var(--ink);}
+  .tick .lbl{position:absolute;left:50%;top:calc(100% + 8px);transform:translateX(-50%);
+    font-family:var(--mono);font-size:12px;letter-spacing:.02em;color:var(--muted);white-space:nowrap;
+    text-transform:uppercase;}
+  .hint{position:absolute;left:50%;bottom:112px;transform:translateX(-50%);z-index:3;
+    font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+    transition:opacity .5s ease;pointer-events:none;}
+  .stage.go .hint{opacity:0;}
+
+  /* ---- our team ---- */
+  .team{width:100%;max-width:1440px;margin:0 auto;padding:82px 20px;
+    display:flex;flex-direction:column;align-items:center;position:relative;z-index:1;}
+  .founders{margin-top:56px;width:100%;display:flex;flex-direction:column;gap:24px;align-items:center;}
+  .managers{margin-top:64px;width:100%;display:flex;flex-direction:column;gap:24px;align-items:center;}
+  .grp-label{font-family:var(--disp);font-weight:500;font-size:20px;color:var(--ink);text-align:center;width:100%;padding-left:24px;}
+  .founders-row{display:flex;gap:clamp(40px,7vw,100px);align-items:flex-start;justify-content:center;flex-wrap:wrap;}
+  .managers-row{display:flex;gap:clamp(28px,4.3vw,62px);align-items:flex-start;justify-content:center;flex-wrap:wrap;max-width:848px;margin:0 auto;}
+
+  .card{display:flex;flex-direction:column;gap:18px;align-items:flex-start;padding-left:24px;}
+  .card-240{width:264px;}
+  .card-216{width:240px;}
+  .avatar{position:relative;border-radius:50%;overflow:hidden;background:#0d0d0d;flex:none;align-self:center;}
+  .avatar::before{content:"";position:absolute;inset:0;border-radius:50%;
+    background:linear-gradient(to bottom, var(--red), rgba(255,21,22,0));}
+  .avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:50%;}
+  .av-240{width:240px;height:240px;}
+  .av-162{width:162px;height:162px;}
+  .info{padding-left:12px;display:flex;flex-direction:column;gap:14px;align-items:flex-start;width:100%;}
+  .who{display:flex;flex-direction:column;gap:3px;width:100%;}
+  .who .name{font-family:var(--disp);font-weight:500;font-size:20px;color:var(--ink);}
+  .who .role{font-family:var(--disp);font-weight:400;font-size:16px;color:var(--muted);}
+  .socials{display:flex;gap:6px;align-items:center;}
+  .soc{width:42px;height:42px;display:inline-flex;align-items:center;justify-content:center;padding:8px;color:var(--ink);}
+  .soc svg{width:24px;height:24px;display:block;}
+
+  /* ---- about (simple single column) ---- */
+  #about{scroll-margin-top:100px;}   /* anchor stops 100px below the sticky nav (desktop) */
+  .about-wrap{width:100%;max-width:680px;margin:0 auto;text-align:left;}
+  .ab-kicker{font-family:var(--disp);font-weight:500;font-size:clamp(40px,7vw,72px);
+    letter-spacing:-0.05em;line-height:0.95;color:var(--ink);}
+  .ab-intro{font-family:var(--disp);font-weight:400;font-size:clamp(18px,2.2vw,24px);
+    letter-spacing:-0.03em;line-height:1.34;color:var(--muted);margin:18px 0 18px;}
+  .ab-row{padding:28px 0;border-top:1px solid var(--line);}
+  .ab-row:last-child{border-bottom:1px solid var(--line);}
+  .ab-label{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--muted);margin-bottom:16px;}
+  .ab-content p{font-family:var(--body);font-size:clamp(15px,1.4vw,17px);line-height:1.7;color:var(--ink);margin:0 0 14px;}
+  .ab-content p.dim{color:var(--muted);}
+  .ab-content p:last-child{margin-bottom:0;}
+  .ab-content strong{font-weight:600;color:var(--ink);}
+  .ab-figs{display:flex;flex-wrap:wrap;gap:18px 48px;margin-top:22px;}
+  .ab-figs .fig{display:flex;flex-direction:column;}
+  .ab-figs .n{font-family:var(--disp);font-weight:600;font-size:clamp(26px,3vw,36px);letter-spacing:-0.04em;color:var(--ink);line-height:1;}
+  .ab-figs .l{font-family:var(--mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-top:8px;}
+  .ab-list{list-style:none;margin:0;padding:0;}
+  .ab-list li{padding:7px 0;font-family:var(--body);font-size:clamp(15px,1.4vw,17px);line-height:1.6;color:var(--muted);}
+  .ab-list .t{font-family:var(--disp);font-weight:600;color:var(--ink);}
+  .ab-quote{font-family:var(--disp);font-weight:400;font-size:clamp(18px,2vw,23px);
+    line-height:1.42;letter-spacing:-0.02em;color:var(--ink);margin:24px 0 0;padding-top:22px;border-top:1px solid var(--line);}
+  .ab-defs{margin:6px 0 0;}
+  .ab-defs dt{font-family:var(--disp);font-weight:600;font-size:18px;letter-spacing:-0.02em;color:var(--ink);margin-top:20px;}
+  .ab-defs dd{margin:7px 0 0;font-family:var(--body);font-size:clamp(15px,1.4vw,16px);line-height:1.65;color:var(--muted);}
+
+  /* ---- watch / youtube ---- */
+  .yt-grid{width:100%;max-width:1040px;display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .yt-card{display:block;text-decoration:none;color:var(--ink);}
+  .yt-thumb{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;
+    border:1px solid var(--line);background:#000;transition:transform .2s ease, border-color .2s ease;}
+  .yt-thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease;}
+  .yt-card{transition:transform .2s ease;}
+  .yt-card:hover{transform:translateY(-3px);}
+  .yt-card:hover .yt-thumb{border-color:rgba(248,219,76,.4);}
+  #watch > a.btn{margin-top:26px;}
+  .yt-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+    width:56px;height:56px;border-radius:50%;background:rgba(255,21,22,.92);
+    display:flex;align-items:center;justify-content:center;transition:background .2s ease;}
+  .yt-play::before{content:"";border-style:solid;border-width:9px 0 9px 15px;
+    border-color:transparent transparent transparent #fff;margin-left:3px;}
+  .yt-card:hover .yt-play{background:var(--red);}
+  .yt-title{margin-top:13px;font-family:var(--disp);font-weight:500;font-size:16px;
+    line-height:1.36;letter-spacing:-0.02em;color:var(--ink);}
+  @media (max-width:880px){ .yt-grid{grid-template-columns:1fr;max-width:420px;} }
+
+
+  /* ---- join our community ---- */
+  .comm-banner{position:relative;overflow:hidden;width:100%;max-width:1040px;border-radius:18px;text-decoration:none;color:#fff;
+    background:linear-gradient(110deg,#ff1516,#9d0d0e);display:flex;align-items:center;justify-content:space-between;
+    gap:24px;padding:clamp(28px,4vw,46px);}
+  .comm-banner::before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;left:-120px;top:-180px;background:rgba(255,255,255,.10);}
+  .comm-banner::after{content:"";position:absolute;width:360px;height:360px;border-radius:50%;right:-120px;bottom:-200px;background:rgba(0,0,0,.12);}
+  .cb-text{position:relative;z-index:1;}
+  .cb-title{font-family:var(--disp);font-weight:600;font-size:clamp(24px,3vw,38px);letter-spacing:-0.03em;margin-bottom:20px;}
+  .cb-btn{background:#fff;color:#ff1516;padding:11px 24px;border-radius:40px;font-family:var(--disp);font-weight:600;font-size:15px;display:inline-block;}
+  .cb-luma{position:relative;z-index:1;font-family:var(--disp);font-weight:700;font-size:clamp(30px,4vw,48px);letter-spacing:-0.02em;color:#fff;}
+  .comm-social{width:100%;max-width:1040px;display:grid;grid-template-columns:repeat(5,1fr);gap:18px;}
+  .cs-card{display:flex;flex-direction:column;align-items:center;gap:12px;padding:30px 16px;border-radius:14px;
+    border:1px solid var(--line);background:rgba(255,255,255,.02);text-decoration:none;color:var(--ink);text-align:center;
+    transition:transform .2s ease,border-color .2s ease,background .2s ease;}
+  .cs-card:hover{transform:translateY(-3px);border-color:rgba(255,21,22,.5);background:rgba(255,255,255,.04);}
+  .cs-ic{width:44px;height:44px;color:var(--ink);display:block;}
+  .cs-ic svg{width:100%;height:100%;display:block;}
+  .cs-lbl{font-family:var(--disp);font-weight:500;font-size:15px;color:var(--ink);}
+  .cs-sub{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);}
+  /* ---- footer ---- */
+  #contact{scroll-margin-top:100px;}
+  .site-footer{width:100%;max-width:1276px;margin:0 auto;padding:82px 24px 0;display:flex;flex-direction:column;gap:30px;align-items:center;position:relative;z-index:1;}
+  .foot-email{font-family:var(--disp);font-weight:400;font-size:clamp(18px,2.2vw,26px);letter-spacing:-0.02em;color:var(--muted);text-decoration:none;}
+  .foot-email:hover{color:var(--ink);}
+  .foot-link{font-family:var(--body);font-size:15px;color:var(--muted);text-decoration:none;}
+  .foot-link:hover{color:var(--ink);}
+  .foot-bottom{width:100%;border-top:1px solid var(--line);padding-top:24px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;}
+  .foot-logo-link{display:block;}
+  .foot-logo{height:68px;width:auto;display:block;margin:22px 0;}
+  .foot-copy,.foot-craft{font-family:var(--body);font-size:13px;color:var(--muted);}
+  .foot-craft{text-decoration:underline;text-underline-offset:3px;}
+  .foot-craft:hover{color:var(--ink);}
+  @media (max-width:768px){
+    .comm-banner{flex-direction:column;align-items:flex-start;text-align:left;}
+    .comm-social{grid-template-columns:repeat(2,1fr);}
+    .foot-bottom{flex-direction:column;text-align:center;gap:14px;}
+  }
+
+
+  /* ---- about (figma) ---- */
+  .about2{width:100%;max-width:948px;margin:0 auto;text-align:left;}
+  .pill{display:inline-block;border-radius:999px;border:1px solid;padding:6px 16px;
+    font-family:var(--disp);font-weight:500;font-size:18px;line-height:1;margin:38px 0 22px;}
+  .pill-red{border-color:var(--red);color:var(--red);}
+  .pill-yellow{border-color:var(--acc);color:var(--acc);}
+  .pill-ink{border-color:var(--ink);color:var(--ink);}
+  .about2 .ab-p{font-family:var(--body);font-size:clamp(15px,1.4vw,17px);line-height:1.7;color:var(--muted);margin:0 0 16px;}
+  .about2 .ab-p strong{color:var(--ink);font-weight:600;}
+  .ab-stats3{display:flex;flex-wrap:wrap;gap:24px 72px;justify-content:center;margin:36px 0 10px;text-align:center;}
+  .ab-stats3 .s3 .n{font-family:var(--disp);font-weight:500;font-size:clamp(30px,3.4vw,42px);letter-spacing:-0.06em;color:var(--ink);line-height:1;}
+  .ab-stats3 .s3 .l{font-family:var(--disp);font-weight:500;font-size:clamp(15px,1.7vw,20px);color:var(--ink);margin-top:10px;}
+  .ab-mission{display:grid;grid-template-columns:1fr 280px;gap:48px;align-items:start;}
+  .ab-mission-photo{aspect-ratio:280/300;max-height:295px;border-radius:14px;border:1px solid var(--line);
+    background:linear-gradient(150deg,#242424,#181818);overflow:hidden;display:flex;align-items:center;justify-content:center;}
+  .ab-mission-photo img{width:100%;height:100%;object-fit:cover;display:block;}
+  .mph-ph{width:42px;height:42px;color:#5a5a5a;display:block;}
+  .mph-ph svg{width:100%;height:100%;}
+  .ab-quote2{display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:start;margin:44px 0;}
+  .ab-quote2 .q{font-family:var(--disp);font-weight:700;font-size:60px;line-height:1;color:var(--ink);}
+  .ab-quote2 .q:last-child{align-self:end;}
+  .ab-quote2 p{font-family:var(--body);font-size:clamp(15px,1.5vw,18px);line-height:1.6;color:var(--muted);margin:10px 0 0;}
+  .ab-values3{display:grid;grid-template-columns:repeat(3,1fr);gap:44px;margin-top:14px;}
+  .ab-values3 .v3 h4{font-family:var(--disp);font-weight:500;font-size:clamp(17px,1.8vw,21px);letter-spacing:-0.02em;color:var(--ink);margin:0 0 16px;}
+  .ab-values3 .v3 p{font-family:var(--body);font-size:clamp(14px,1.3vw,15px);line-height:1.65;color:var(--muted);margin:0;}
+  @media (max-width:768px){
+    .ab-mission{grid-template-columns:1fr;}
+    .ab-values3{grid-template-columns:1fr;gap:30px;}
+    .ab-stats3{gap:20px 40px;}
+  }
+
+  /* ---- join our community (figma) ---- */
+  #community{gap:62px;}
+  #community .band-head{max-width:600px;}
+  #community .band-head .t1{white-space:nowrap;}
+  .comm-wrap{width:100%;max-width:1050px;margin:0 auto;display:flex;flex-direction:column;gap:40px;}
+  .nme-banner{position:relative;overflow:hidden;width:100%;max-width:1050px;border-radius:24px;text-decoration:none;
+    display:flex;align-items:center;justify-content:space-between;gap:24px;padding:42px 62px;min-height:216px;
+    background:linear-gradient(to right, rgba(255,21,22,.5) 0%, rgba(240,90,93,0) 83.381%);
+    transition:transform .2s ease, box-shadow .2s ease;}
+  .nme-banner:hover{transform:translateY(-3px);box-shadow:0 24px 60px rgba(0,0,0,.35);}
+  .nme-text{position:relative;z-index:1;display:flex;flex-direction:column;align-items:flex-start;gap:18px;}
+  .nme-title{font-family:var(--disp);font-weight:500;font-size:clamp(26px,3.4vw,42px);letter-spacing:-0.06em;color:#F4F2EF;margin:0;white-space:nowrap;}
+  .nme-btn{display:inline-block;background:#FF1516;color:#F4F2EF;padding:10px 20px;border-radius:14px;font-family:var(--body);font-weight:500;font-size:17px;transition:background .16s ease;}
+  .nme-banner:hover .nme-btn{background:#ff3b3c;}
+  .nme-luma{flex:none;width:212px;height:132px;display:flex;align-items:center;justify-content:center;}
+  .nme-luma span{font-family:var(--disp);font-weight:600;font-size:40px;color:rgba(255,255,255,.72);letter-spacing:-0.02em;}
+  .nme-star{font-size:.55em;vertical-align:super;margin-left:.04em;}
+  @media (max-width:768px){
+    .nme-banner{flex-direction:column;align-items:center;gap:24px;min-height:0;padding:42px 16px 16px;
+      background:linear-gradient(to bottom, rgba(255,21,22,.5) 0%, rgba(240,90,93,0) 83.381%);}
+    .nme-text{align-items:center;width:100%;}
+    .nme-title{font-size:26px;text-align:center;white-space:normal;}
+    .nme-luma{width:100%;height:132px;}
+  }
+  .comm-banner-row{display:flex;gap:24px;}
+  .comm-banner-img{display:block;width:100%;max-width:1050px;}
+  .comm-banner-img img{width:100%;height:auto;display:block;border-radius:18px;}
+  .comm-banner-m{display:none;}  /* desktop SVG banner is used at all sizes (scales responsively) */
+  .cb-left{flex:1.75;position:relative;overflow:hidden;border-radius:18px;min-height:214px;
+    padding:clamp(28px,4vw,50px);text-decoration:none;color:#fff;
+    background:radial-gradient(140% 180% at 0% 0%, rgba(255,21,22,.85), #2a0708 62%);
+    display:flex;flex-direction:column;justify-content:center;align-items:flex-start;}
+  .cb-title{font-family:var(--disp);font-weight:600;font-size:clamp(24px,3vw,40px);letter-spacing:-0.03em;margin-bottom:22px;}
+  .cb-btn{background:var(--red);color:#fff;padding:11px 24px;border-radius:40px;font-family:var(--disp);font-weight:600;font-size:15px;}
+  .cb-right{flex:1;border-radius:18px;min-height:214px;display:flex;align-items:center;justify-content:center;text-decoration:none;
+    border:1px solid var(--line);background:radial-gradient(140% 180% at 100% 0%, rgba(255,21,22,.18), rgba(30,30,30,.5));}
+  .cb-luma{font-family:var(--disp);font-weight:600;font-size:clamp(34px,4.6vw,52px);color:#fff;letter-spacing:-0.02em;}
+  .luma-star{font-size:.55em;vertical-align:super;margin-left:.05em;}
+  .comm-social{display:grid;grid-template-columns:repeat(5,1fr);gap:24px;}
+  .cs-item{display:flex;flex-direction:column;align-items:center;gap:16px;text-decoration:none;}
+  .cs-tile{width:100%;height:auto;aspect-ratio:212/132;display:block;border-radius:14px;transition:transform .2s ease;}
+  .cs-item:hover .cs-tile{transform:translateY(-4px);}
+  .cs-sq{width:100%;max-width:170px;aspect-ratio:1/1;border-radius:16px;display:flex;align-items:center;justify-content:center;
+    border:1px solid var(--line);transition:transform .2s ease;}
+  .cs-item:hover .cs-sq{transform:translateY(-4px);}
+  .cs-sq svg{width:46px;height:46px;fill:#fff;}
+  .cs-tg{background:radial-gradient(120% 120% at 50% 18%, #2aa3e0, #0b2a45);}
+  .cs-li{background:radial-gradient(120% 120% at 50% 18%, #1c78c0, #08243f);}
+  .cs-yt{background:radial-gradient(120% 120% at 50% 18%, #ff2b2b, #3a0708);}
+  .cs-x{background:radial-gradient(120% 120% at 50% 18%, #5a5a5a, #111);}
+  .cs-cap{font-family:var(--disp);font-weight:500;font-size:15px;color:var(--muted);text-align:center;}
+  @media (max-width:768px){
+    .comm-banner-row{flex-direction:column;}
+    .comm-social{grid-template-columns:repeat(2,1fr);gap:18px;}
+  }
+
+  .page-end{height:clamp(70px,9vw,120px);}
+
+  /* ---- tablet ---- */
+  @media (max-width:768px){
+    .stat{width:170px;}
+  }
+  /* ---- mobile ---- */
+  @media (max-width:768px){
+    /* mobile menu (figma): logo + Join Us on top row, scrollable faded menu below */
+    .nav-inner{display:flex;flex-wrap:wrap;align-items:center;row-gap:14px;padding-left:24px;padding-right:24px;}
+    .logo{order:1;gap:12px;}
+    .logo .logo-mark{height:36px;}
+    .pb-mk{height:15px;}
+    .pb-label{font-size:8px;}
+    .nav-right{order:2;margin-left:auto;}
+    .nav-social-desktop{display:none;}
+    .nav-links{order:3;width:100%;flex-basis:100%;display:flex;align-items:center;justify-content:flex-start;overflow-x:auto;gap:42px;
+      color:var(--ink);font-size:16px;
+      -webkit-overflow-scrolling:touch;scrollbar-width:none;
+      -webkit-mask-image:linear-gradient(to right,#fff 88%,transparent 100%);
+      mask-image:linear-gradient(to right,#fff 88%,transparent 100%);}
+    .nav-links::-webkit-scrollbar{display:none;}
+    .nav-links > a{white-space:nowrap;flex:none;}
+    .nav-social-mobile{display:inline-flex;flex:none;margin-left:auto;}
+    .hero{padding-top:64px;}
+    .hero-head{width:max-content;max-width:100%;margin:0 auto;text-align:left;}
+    .h-1{padding-left:0;}
+    .h-2{padding-left:55px;}
+    .h3row{flex-direction:row;flex-wrap:nowrap;align-items:flex-end;justify-content:flex-start;padding-left:28px;gap:30px;}
+    .h3row .h-3{padding-left:0;white-space:nowrap;}
+    .h3row .tagline{font-size:15px;letter-spacing:-0.06em;padding-bottom:0;white-space:nowrap;}
+    .hero-cta{flex-direction:column;align-items:stretch;gap:25px;width:max-content;max-width:100%;margin:80px auto 0;}
+    .hero-cta .btn{width:100%;justify-content:center;}
+    .nav-right .btn{padding:8px 14px;font-size:15px;border-radius:12px;}
+    /* equal top/bottom margin per block, smaller than desktop */
+    .stats, .band, .prev, .team{padding-top:76px;padding-bottom:76px;}
+    .band-body{gap:40px;}
+    .ev-grid{gap:18px;}
+    .page-end{height:72px;}
+    #about{scroll-margin-top:80px;}
+    .stat{width:42%;min-width:140px;}
+    /* team: 2 per line on mobile; founder circles bigger than managers */
+    .founders-row, .managers-row{gap:22px 4%;width:100%;}
+    .card-240, .card-216{width:46%!important;}
+    .card{padding-left:0;}
+    .grp-label{padding-left:0;}
+    .av-240, .av-162{width:100%!important;height:auto!important;aspect-ratio:1/1;}
+    .prev .band-head .t1{white-space:normal;}
+    /* Meet Us: full-bleed horizontal finger-scroll carousel (1st banner full + peek of next) */
+    #meetus{position:relative;}
+    .meetus-pin{display:flex;flex-direction:column;align-items:center;gap:24px;width:100%;position:sticky;top:92px;}
+    #meetus .band-body{display:block;}
+    #meetus .band-body > .btn{display:block;width:max-content;margin:26px auto 0;}
+    #meetus .ev-grid{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;gap:24px;scroll-snap-type:none;
+      width:100vw;margin-left:calc(50% - 50vw);padding:0 16px 10px;scroll-padding-left:16px;
+      -webkit-overflow-scrolling:touch;scrollbar-width:none;}
+    #meetus .ev-grid::-webkit-scrollbar{display:none;}
+    #meetus .ev-card{flex:0 0 calc(100vw - 64px);scroll-snap-align:start;}
+    /* footer logo: a bit more vertical space on mobile */
+    .foot-logo{margin:28px 0;}
+    .who .name{font-size:18px;}
+    .who .role{font-size:14px;}
+    .stage{height:clamp(380px,62vh,520px);}
+    .hint{bottom:104px;}
+  }
+  /* flowing red gradient background (WebGL, scrolls with page, behind content) */
+  .flow-bg{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.85;}
+  .flow-bg canvas{display:block;width:100%;height:100%;}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- decorative blur blobs -->
+  <div class="blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+  </div>
+  <div class="flow-bg" aria-hidden="true"><canvas id="flow-canvas"></canvas></div>
+
+  <!-- nav -->
+  <nav class="nav">
+   <div class="nav-inner">
+    <a class="logo" href="#" aria-label="Web3 Devs Underground — home">
+      <img class="logo-mark" src="logo-united.svg" alt="Web3 Devs Underground — Powered by MasterKey" />
+    </a>
+    <div class="nav-links">
+      <a class="reveal" href="https://luma.com/web3devs_underground" target="_blank" rel="noopener noreferrer">Events</a>
+      <a class="reveal" href="careers.html">Careers</a>
+      <a class="reveal" href="#about">About</a>
+      <a class="reveal" href="#contact">Contacts</a>
+      <span class="nav-social nav-social-mobile"><a class="nsoc" href="https://x.com/Web3_Devs" target="_blank" rel="noopener noreferrer" aria-label="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"/></svg></a><a class="nsoc" href="https://www.youtube.com/@web3devsunderground" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a><a class="nsoc" href="https://www.linkedin.com/company/israel-web3-developer-underground/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a></span>
+    </div>
+    <div class="nav-right">
+      <span class="nav-social nav-social-desktop"><a class="nsoc" href="https://x.com/Web3_Devs" target="_blank" rel="noopener noreferrer" aria-label="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"/></svg></a><a class="nsoc" href="https://www.youtube.com/@web3devsunderground" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a><a class="nsoc" href="https://www.linkedin.com/company/israel-web3-developer-underground/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a></span>
+      <a class="btn btn-red pad-sm" href="https://t.me/+-sEflgfrqDoyYWVk" target="_blank" rel="noopener noreferrer">Join Us</a>
+    </div>
+   </div>
+  </nav>
+
+  <!-- hero -->
+  <div class="hero">
+    <div class="hero-head">
+      <div class="h-line h-1">Israel&#39;s Largest Hub</div>
+      <div class="h-line h-2">for Web3 Developers</div>
+      <div class="h3row">
+        <div class="tagline">Connect. Learn. Build.</div>
+        <div class="h-line h-3">and Builders</div>
+      </div>
+    </div>
+    <div class="hero-cta">
+      <a class="btn btn-red pad-lg" href="https://t.me/+-sEflgfrqDoyYWVk" target="_blank" rel="noopener noreferrer">Join the Community</a>
+      <a class="btn btn-outline pad-lg" href="https://docs.google.com/forms/d/e/1FAIpQLScJ-FVv_E3Ffe3_UzSAYJzcgoYRMPmvjRdtrNWMqSBuuprqqA/viewform" target="_blank" rel="noopener noreferrer">Apply to Speak</a>
+    </div>
+  </div>
+
+  <!-- stats -->
+  <div class="stats">
+    <div class="stat reveal"><div class="num">50+</div><div class="lbl">Events (Recorded)</div></div>
+    <div class="stat reveal"><div class="num">120+</div><div class="lbl">Speakers</div></div>
+    <div class="stat reveal"><div class="num">12,000+</div><div class="lbl">Luma Subscribers</div></div>
+    <div class="stat reveal"><div class="num">1,500+</div><div class="lbl">Meetup Members</div></div>
+  </div>
+
+  <!-- our speakers -->
+  <section class="band">
+    <div class="band-head reveal">
+      <div class="t1">Our Speakers</div>
+    </div>
+    <div class="speakers-sphere" id="speakersSphere">
+      <div class="sphere-field" id="sphereField"></div>
+    </div>
+  </section>
+
+  <!-- meet us band -->
+  <section class="band" id="meetus">
+    <div class="meetus-pin">
+      <div class="band-head reveal">
+        <div class="t1">Meet Us</div>
+        <div class="t2">Sign Up to the Next Event!</div>
+        <div class="t3">Join us at our next meetup and connect with the community</div>
+      </div>
+      <div class="band-body">
+        <div class="ev-grid" id="lumaEvents"></div>
+        <a class="btn btn-red pad-sm" href="https://luma.com/web3devs_underground" target="_blank" rel="noopener noreferrer">View All Events</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- our sponsors band -->
+  <section class="band">
+    <div class="band-head reveal">
+      <div class="t1">Our Sponsors</div>
+      <div class="t2">Supported by leading organizations<br>in the Web3 ecosystem</div>
+    </div>
+    <div class="band-body">
+      <img class="sponsor-logo" src="masterkey-logo.avif" alt="MasterKey" loading="lazy" decoding="async" />
+      <a class="btn btn-outline pad-sm" href="https://masterkey.fillout.com/sponsor" target="_blank" rel="noopener noreferrer">Become a Sponsor</a>
+    </div>
+  </section>
+
+  <!-- previous events: interactive timeline -->
+  <section class="prev">
+    <div class="band-head reveal">
+      <div class="t1">Previous Events</div>
+      <div class="t2">Highlights from our past meetups and conferences</div>
+    </div>
+    <div class="stage" id="tlStage" tabindex="0" aria-label="Previous events timeline — drag or use arrow keys">
+      <div class="lane" id="tlLane"></div>
+      <div class="ruler">
+        <div class="ruler-track" id="rulerTrack"></div>
+      </div>
+      <div class="hint">drag · tap a month · &#8592; &#8594;</div>
+    </div>
+  </section>
+
+  <!-- watch / youtube -->
+  <section class="band" id="watch">
+    <div class="band-head reveal">
+      <div class="t1">Watch</div>
+      <div class="t2">Talks and panels from our meetups</div>
+    </div>
+    <div class="yt-grid">
+      <a class="yt-card reveal" href="https://www.youtube.com/watch?v=eIHoHiY1gVw" target="_blank" rel="noopener noreferrer">
+        <div class="yt-thumb"><img src="https://i.ytimg.com/vi/eIHoHiY1gVw/hqdefault.jpg" alt="" loading="lazy"><span class="yt-play"></span></div>
+        <div class="yt-title">Q-Day for Bitcoin: What Breaks and How Migration Will Work</div>
+      </a>
+      <a class="yt-card reveal" href="https://www.youtube.com/watch?v=CucXJ13s4Wg" target="_blank" rel="noopener noreferrer">
+        <div class="yt-thumb"><img src="https://i.ytimg.com/vi/CucXJ13s4Wg/hqdefault.jpg" alt="" loading="lazy"><span class="yt-play"></span></div>
+        <div class="yt-title">Web3 Security: Auditing, Exploits &amp; Defenses — with Hacken</div>
+      </a>
+      <a class="yt-card reveal" href="https://www.youtube.com/watch?v=Zm8OTRkchUE" target="_blank" rel="noopener noreferrer">
+        <div class="yt-thumb"><img src="https://i.ytimg.com/vi/Zm8OTRkchUE/hqdefault.jpg" alt="" loading="lazy"><span class="yt-play"></span></div>
+        <div class="yt-title">Q&amp;A with Tsahi Zidenberg | WASM in Arbitrum</div>
+      </a>
+    </div>
+    <a class="btn btn-outline pad-sm" href="https://www.youtube.com/@web3devsunderground" target="_blank" rel="noopener noreferrer">View All</a>
+  </section>
+
+  <!-- our team -->
+  <section class="team">
+    <div class="band-head reveal">
+      <div class="t1">Our Team</div>
+      <div class="t2">Meet the passionate people behind Web3 Devs Underground</div>
+    </div>
+
+    <div class="founders">
+      <div class="grp-label">Founders</div>
+      <div class="founders-row">
+        <div class="card card-240 reveal">
+          <div class="avatar av-240"><img src="team/shauli-rejwan.webp" loading="lazy" decoding="async" width="480" height="480" alt="Shauli Rejwan"></div>
+          <div class="info">
+            <div class="who"><div class="name">Shauli Rejwan</div><div class="role">Co-Founder</div></div>
+            <div class="socials">
+              <a class="soc" href="https://x.com/shap0w" target="_blank" rel="noopener noreferrer" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"/></svg></a>
+              <a class="soc" href="https://www.linkedin.com/in/shauli-rejwan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="card card-240 reveal">
+          <div class="avatar av-240"><img src="team/roy-osherove.webp" loading="lazy" decoding="async" width="480" height="480" alt="Roy Osherove"></div>
+          <div class="info">
+            <div class="who"><div class="name">Roy Osherove</div><div class="role">Co-Founder</div></div>
+            <div class="socials">
+              <a class="soc" href="https://x.com/RoyOsherove" target="_blank" rel="noopener noreferrer" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"/></svg></a>
+              <a class="soc" href="https://www.linkedin.com/in/royosherove/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="managers">
+      <div class="grp-label">Managers</div>
+      <div class="managers-row">
+        <div class="card card-216 reveal">
+          <div class="avatar av-162"><img src="team/amit-shilo.webp" loading="lazy" decoding="async" width="480" height="480" alt="Amit Shilo"></div>
+          <div class="info">
+            <div class="who"><div class="name">Amit Shilo</div><div class="role">Community Lead</div></div>
+            <div class="socials">
+              <a class="soc" href="https://www.linkedin.com/in/amit-shilo/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="card card-216 reveal">
+          <div class="avatar av-162"><img src="team/eden-luttenberg.webp" loading="lazy" decoding="async" width="480" height="480" alt="Eden Luttenberg"></div>
+          <div class="info">
+            <div class="who"><div class="name">Eden Luttenberg</div><div class="role">Biz Dev Manager</div></div>
+            <div class="socials">
+              <a class="soc" href="https://x.com/eluttenberg789?s=11" target="_blank" rel="noopener noreferrer" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"/></svg></a>
+              <a class="soc" href="https://www.linkedin.com/in/eden-luttenberg/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="card card-216 reveal">
+          <div class="avatar av-162"><img src="team/alon-ben-lavy.webp" loading="lazy" decoding="async" width="480" height="480" alt="Alon Ben Lavy"></div>
+          <div class="info">
+            <div class="who"><div class="name">Alon Ben Lavy</div><div class="role">Community Manager</div></div>
+            <div class="socials">
+              <a class="soc" href="https://lotusresear.ch/" target="_blank" rel="noopener noreferrer" aria-label="Website"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm6.93 6h-2.95a15.7 15.7 0 00-1.38-3.56A8.03 8.03 0 0118.92 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14a7.96 7.96 0 010-4h3.38a16.6 16.6 0 000 4H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A8 8 0 015.08 16zm2.95-8H5.08a8 8 0 014.33-3.56A15.7 15.7 0 008.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66a14.8 14.8 0 010-4h4.68a14.8 14.8 0 010 4zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8 8 0 01-4.33 3.56zM16.36 14a16.6 16.6 0 000-4h3.38a7.96 7.96 0 010 4h-3.38z"/></svg></a>
+              <a class="soc" href="https://www.linkedin.com/in/alon-ben-lavy/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="card card-216 reveal">
+          <div class="avatar av-162"><img src="team/alon-kivity.webp" loading="lazy" decoding="async" width="480" height="480" alt="Alon Kivity"></div>
+          <div class="info">
+            <div class="who"><div class="name">Alon Kivity</div><div class="role">Community Dev Manager</div></div>
+            <div class="socials">
+              <a class="soc" href="https://x.com/alonkivity?s=21&t=HWW0pVp1Elph40xB_pGdmg" target="_blank" rel="noopener noreferrer" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"/></svg></a>
+              <a class="soc" href="https://www.linkedin.com/in/alon-kivity/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="card card-216 reveal">
+          <div class="avatar av-162"><img src="team/ariel-wagowsky.webp" loading="lazy" decoding="async" width="480" height="480" alt="Ariel Wagowsky"></div>
+          <div class="info">
+            <div class="who"><div class="name">Ariel Wagowsky</div><div class="role">Growth Manager</div></div>
+            <div class="socials">
+              <a class="soc" href="https://www.linkedin.com/in/wagowsky/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="card card-216 reveal">
+          <div class="avatar av-162"><img src="team/david-langellotti.webp" loading="lazy" decoding="async" width="480" height="480" alt="David Langellotti"></div>
+          <div class="info">
+            <div class="who"><div class="name">David Langellotti</div><div class="role">Content Manager</div></div>
+            <div class="socials">
+              <a class="soc" href="https://www.linkedin.com/in/david-langellotti/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="card card-216 reveal">
+          <div class="avatar av-162"><img src="team/boaz-bechar.webp" loading="lazy" decoding="async" width="480" height="480" alt="Boaz Bechar"></div>
+          <div class="info">
+            <div class="who"><div class="name">Boaz Bechar</div><div class="role">Partnerships Manager</div></div>
+            <div class="socials">
+              <a class="soc" href="https://www.linkedin.com/in/boazb/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="card card-216 reveal">
+          <div class="avatar av-162"><img src="team/jeremy-musighi.webp" loading="lazy" decoding="async" width="480" height="480" alt="Jeremy Musighi"></div>
+          <div class="info">
+            <div class="who"><div class="name">Jeremy Musighi</div><div class="role">BizDev Manager</div></div>
+            <div class="socials">
+              <a class="soc" href="https://www.linkedin.com/in/jeremymusighi/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="card card-216 reveal">
+          <div class="avatar av-162"><img src="team/daria-nik.webp" loading="lazy" decoding="async" width="480" height="480" alt="Daria Nik"></div>
+          <div class="info">
+            <div class="who"><div class="name">Daria Nik</div><div class="role">Designer</div></div>
+            <div class="socials">
+              <a class="soc" href="https://www.linkedin.com/in/nikitina-product-design/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- about -->
+  <section class="band" id="about">
+    <div class="band-head reveal">
+      <div class="t1">About</div>
+      <div class="t2">Supported by leading organizations<br>in the Web3 ecosystem</div>
+    </div>
+    <div class="about2 reveal">
+      <span class="pill pill-red">Who We Are</span>
+      <p class="ab-p">Founded in 2020 by Roy Osherove and Shauli Rejwan, Web3 Developers Underground is Israel&#39;s largest developer-led community for blockchain and decentralized-technology enthusiasts.</p>
+      <p class="ab-p">We unite over 2,000 members &mdash; engineers, founders, investors, academics and other Web3 practitioners &mdash; around a shared passion for building the future of decentralized systems.</p>
+
+      <div class="ab-stats3">
+        <div class="s3"><div class="n">3200+</div><div class="l">Community Members</div></div>
+        <div class="s3"><div class="n">2020</div><div class="l">Founded</div></div>
+        <div class="s3"><div class="n">Israel</div><div class="l">Based</div></div>
+      </div>
+
+      <span class="pill pill-yellow">Our Mission</span>
+      <div class="ab-mission">
+        <div class="ab-mission-text">
+          <p class="ab-p"><strong>Connect</strong> &mdash; ambitious developers and startup teams across Israel&#39;s Web3 landscape.</p>
+          <p class="ab-p"><strong>Educate</strong> &mdash; through deep-dive technical content, hands-on workshops and expert Q&amp;A sessions.</p>
+          <p class="ab-p"><strong>Collaborate</strong> &mdash; on open-source sprints, hackathons and real-world projects that push the boundaries of blockchain technology.</p>
+        </div>
+        <div class="ab-mission-photo"><img src="team/mission.webp" loading="lazy" decoding="async" alt="Web3 Devs Underground team"></div>
+      </div>
+
+      <blockquote class="ab-quote2">
+        <span class="q">&ldquo;</span>
+        <p>Guided by Roy and Shauli&#39;s developer-first vision, we strive to propel both individual careers and the broader ecosystem forward &mdash; professionally, commercially and socially.&rdquo;</p>
+        <span class="q">&rdquo;</span>
+      </blockquote>
+
+      <span class="pill pill-ink">Community Values</span>
+      <div class="ab-values3">
+        <div class="v3"><h4>Knowledge Sharing</h4><p>We believe in the power of open knowledge exchange. Our community is built on the idea that the best way to grow is by learning from each other. Whether you&#39;re a blockchain veteran or just starting out, everyone has something valuable to contribute.</p></div>
+        <div class="v3"><h4>Inclusion and Diversity</h4><p>Web3 Developers Underground is committed to creating a welcoming space for everyone. We actively seek to include diverse voices and perspectives, believing that the future of decentralized technology should be built by a community that represents all people.</p></div>
+        <div class="v3"><h4>Innovation Through Collaboration</h4><p>The most groundbreaking ideas emerge when brilliant minds come together. We foster an environment where collaboration is encouraged, where projects can find team members, and where innovative solutions to challenging problems are developed collectively.</p></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- join our community -->
+  <section class="band" id="community">
+    <div class="band-head reveal">
+      <div class="t1">Join Our Community</div>
+      <div class="t2">Connect with Web3 developers, stay updated, and never miss an event</div>
+    </div>
+    <div class="comm-wrap reveal">
+      <a class="nme-banner reveal" href="https://luma.com/web3devs_underground" target="_blank" rel="noopener noreferrer">
+        <div class="nme-text">
+          <div class="nme-title">Never Miss an Event</div>
+          <span class="nme-btn">Subscribe</span>
+        </div>
+        <div class="nme-luma"><span>luma<span class="nme-star">&#10022;</span></span></div>
+      </a>
+            <div class="comm-social">
+        <a class="cs-item" href="https://t.me/+-sEflgfrqDoyYWVk" target="_blank" rel="noopener noreferrer">
+          <img class="cs-tile" src="social/telegram.svg" alt="Telegram" />
+          <span class="cs-cap">Join the Discussion</span>
+        </a>
+        <a class="cs-item" href="https://www.linkedin.com/company/israel-web3-developer-underground/" target="_blank" rel="noopener noreferrer">
+          <img class="cs-tile" src="social/linkedin.svg" alt="LinkedIn" />
+          <span class="cs-cap">Professional Network</span>
+        </a>
+        <a class="cs-item" href="https://www.youtube.com/@web3devsunderground" target="_blank" rel="noopener noreferrer">
+          <img class="cs-tile" src="social/youtube.svg" alt="YouTube" />
+          <span class="cs-cap">Watch Our Content</span>
+        </a>
+        <a class="cs-item" href="https://x.com/Web3_Devs" target="_blank" rel="noopener noreferrer">
+          <img class="cs-tile" src="social/x.svg" alt="X" />
+          <span class="cs-cap">Follow for Updates</span>
+        </a>
+        <a class="cs-item" href="https://www.meetup.com/israel-web3-developer-underground/" target="_blank" rel="noopener noreferrer">
+          <img class="cs-tile" src="social/meetup.svg" alt="Meetup" />
+          <span class="cs-cap">Follow for Events</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact / footer -->
+  <footer class="site-footer" id="contact">
+    <div class="band-head reveal" style="max-width:none;">
+      <div class="t1">Contact</div>
+      <a class="foot-email" href="mailto:web3devsunderground@gmail.com">web3devsunderground@gmail.com</a>
+      <a class="foot-link" href="https://drive.google.com/drive/folders/1vUjvXOxnXcPnleBrLZVELKcHMOf_y4Pg?usp=sharing" target="_blank" rel="noopener noreferrer">Media Kit</a>
+    </div>
+    <a class="foot-logo-link" href="#" aria-label="Web3 Devs Underground — home">
+      <img class="foot-logo" src="logo-united.svg" alt="Web3 Devs Underground" />
+    </a>
+    <div class="foot-bottom">
+      <span class="foot-copy">&copy; 2026 Web3 Developers Underground.<br>All rights reserved.</span>
+      <a class="foot-craft" href="https://www.linkedin.com/in/nikitina-product-design/" target="_blank" rel="noopener noreferrer">Crafted with &#129293; by Daria</a>
+    </div>
+  </footer>
+
+  <div class="page-end" style="height:40px"></div>
+
+</div><!-- /page -->
+
+<script>
+/* scroll reveal: fade/rise elements in as they enter the viewport */
+(function(){
+  var io=('IntersectionObserver' in window) ? new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold:0.18, rootMargin:'0px 0px -8% 0px'}) : null;
+  window.__reveal=function(scope){
+    var els=[].slice.call((scope||document).querySelectorAll('.reveal:not(.in)'));
+    if(!io){ els.forEach(function(el){el.classList.add('in');}); return; }
+    els.forEach(function(el){ io.observe(el); });
+  };
+  window.__reveal(document);
+})();
+</script>
+<script>
+/* below 360px, render the 360px layout and let the browser scale it down proportionally */
+(function(){var m=document.querySelector('meta[name=viewport]');if(!m)return;
+  if((window.screen&&window.screen.width&&window.screen.width<360)||window.innerWidth<360){
+    m.setAttribute('content','width=360');
+  }})();
+</script>
+<script defer src="flow.js"></script>
+<script defer src="events.js"></script>
+<script defer src="luma.js"></script>
+<script defer src="site.js"></script>
+<script>
+/* nav-links: drop the fade mask when the row fits without scrolling */
+(function(){
+  function navFade(){var nl=document.querySelector('.nav-links');if(!nl)return;
+    nl.classList.toggle('nofade', nl.scrollWidth <= nl.clientWidth + 2);}
+  window.addEventListener('resize',navFade);
+  window.addEventListener('load',navFade); navFade();
+})();
+/* Meet Us (mobile): pin the section and convert vertical scroll into horizontal card scroll */
+(function(){
+  var s=document.getElementById('meetus'); if(!s) return;
+  var pin=s.querySelector('.meetus-pin'), grid=s.querySelector('.ev-grid');
+  if(!pin||!grid) return;
+  var mq=window.matchMedia('(max-width:768px)');
+  function maxX(){ return Math.max(0, grid.scrollWidth - grid.clientWidth); }
+  function setup(){
+    if(!mq.matches){ s.style.minHeight=''; return; }
+    var m=maxX();
+    s.style.minHeight = m>4 ? (pin.offsetHeight + m) + 'px' : '';
+    onScroll();
+  }
+  function onScroll(){
+    if(!mq.matches) return;
+    var m=maxX(); if(m<=4) return;
+    var dist=s.offsetHeight - pin.offsetHeight; if(dist<=0) return;
+    var prog=Math.min(1, Math.max(0, -s.getBoundingClientRect().top / dist));
+    grid.scrollLeft = prog * m;
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', setup);
+  setTimeout(setup, 700); setTimeout(setup, 1800);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+# Web3 Devs Underground
+
+> Israel's largest developer-led Web3 community — meetups, talks, and 3,200+ builders. Connect. Learn. Build.
+
+Web3 Devs Underground (web3devs.org) is a community for blockchain and decentralized-technology developers and builders in Israel. Founded in 2020 by Roy Osherove and Shauli Rejwan, it runs regular in-person meetups and conference talks featuring speakers from leading Web3 companies (e.g. StarkWare, Chainlink, Stellar, Mina, Aztec, Check Point and more). The community has 3,200+ members.
+
+## Pages
+- [Home](https://web3devs.org/): events, featured speakers, team, and how to join the community.
+- [Careers](https://web3devs.org/careers): Web3 & blockchain job openings shared by companies in the community, plus a talent pool where developers can submit their profile.
+
+## Key links
+- Events calendar (Luma): https://luma.com/web3devs_underground
+- Meetup group: https://www.meetup.com/israel-web3-developer-underground/
+- Telegram community: https://t.me/+-sEflgfrqDoyYWVk
+- YouTube (recorded talks): https://www.youtube.com/@web3devsunderground
+- LinkedIn: https://www.linkedin.com/company/israel-web3-developer-underground/
+- X / Twitter: https://x.com/Web3_Devs
+- Contact: web3devsunderground@gmail.com
+
+## Facts
+- Name: Web3 Devs Underground (a.k.a. Israel Web3 Developers Underground)
+- Founded: 2020
+- Founders: Roy Osherove, Shauli Rejwan
+- Location / area served: Israel
+- Focus: blockchain, web3, decentralized technology — developer meetups, talks, hiring
+- Tagline: Connect. Learn. Build.

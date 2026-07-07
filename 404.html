@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found — Web3 Devs Underground</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0e0e0e">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  :root{--bg:#0e0e0e;--ink:#f4f2ef;--muted:#908f8e;--red:#FF1516;--yellow:#f8db4c;}
+  html,body{height:100%;}
+  body{background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;
+    display:flex;align-items:center;justify-content:center;text-align:center;
+    padding:24px;overflow:hidden;position:relative;}
+  .glow{position:fixed;inset:0;z-index:0;pointer-events:none;
+    background:
+      radial-gradient(420px 420px at 18% 88%, rgba(255,21,22,.30), transparent 70%),
+      radial-gradient(360px 360px at 86% 14%, rgba(255,21,22,.20), transparent 70%);}
+  .wrap{position:relative;z-index:1;max-width:560px;}
+  .logo{height:46px;width:auto;margin:0 auto 40px;display:block;}
+  .code{font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:clamp(64px,16vw,120px);
+    letter-spacing:-0.06em;line-height:1;}
+  h1{font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:clamp(22px,4vw,30px);
+    letter-spacing:-0.03em;margin:14px 0 12px;}
+  p{color:var(--muted);font-size:16px;line-height:1.6;margin-bottom:32px;}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    background:var(--red);color:var(--ink);text-decoration:none;
+    font-family:'Inter',sans-serif;font-weight:500;font-size:16px;
+    padding:13px 26px;border-radius:14px;transition:transform .16s ease,background .16s ease;}
+  .btn:hover{transform:translateY(-2px);background:#ff3b3c;}
+</style>
+</head>
+<body>
+  <div class="glow"></div>
+  <div class="wrap">
+    <img class="logo" src="/logo-united.svg" alt="Web3 Devs Underground">
+    <div class="code">404</div>
+    <h1>Page not found</h1>
+    <p>The page you're looking for doesn't exist or has moved. Let's get you back to the community.</p>
+    <a class="btn" href="/">Back to home</a>
+  </div>
+</body>
+</html>

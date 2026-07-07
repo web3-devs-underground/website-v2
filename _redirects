@@ -1,0 +1,2 @@
+# Netlify: serve careers.html at the clean URL /careers
+/careers   /careers.html   200
