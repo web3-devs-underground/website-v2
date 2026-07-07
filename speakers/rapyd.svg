@@ -1,0 +1,44 @@
+<svg version="1.1" id="Layer_1" xmlns:x="ns_extend;" xmlns:i="ns_ai;" xmlns:graph="ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 141 43.3071" style="enable-background:new 0 0 141 43.3;" xml:space="preserve">
+ <style type="text/css">
+  .st0{clip-path:url(#SVGID_2_);}
+	.st1{fill:#FFFFFF;}
+ </style>
+ <metadata>
+  <sfw xmlns="ns_sfw;">
+   <slices>
+   </slices>
+   <sliceSourceBounds bottomLeftOrigin="true" height="43.3" width="141" x="0" y="0">
+   </sliceSourceBounds>
+  </sfw>
+ </metadata>
+ <g>
+  <g>
+   <defs>
+    <rect id="SVGID_1_" width="141" height="43.3">
+    </rect>
+   </defs>
+   <clipPath id="SVGID_2_">
+    <use href="#SVGID_1_" style="overflow:visible;">
+    </use>
+   </clipPath>
+   <g class="st0">
+    <path class="st1" d="M131.2,15.5h-4.9c-3.4,0-6.2,2.5-6.6,5.8c-0.6,3.6,1.4,5.8,4.6,5.8h4.9L131.2,15.5z M133.9,0h7.1l-3.3,19.2
+				l-1.4,7.9l-1.1,6.1l-0.1,0.7h-13.4c-6.2,0-10.4-5.4-9.1-12.5S119.8,8.8,126,8.8h6.3L133.9,0z">
+    </path>
+    <path class="st1" d="M66.3,27.8h4.9c3.4,0,6.2-2.5,6.6-5.8c0.6-3.6-1.4-5.8-4.6-5.8h-4.9L66.3,27.8z M61.2,16.2l0.9-5.3
+				L61.2,16.2z M63.5,43.3h-7.1l1.5-8.8l0.1-0.7l0.1-0.4l3.9-22.4l0.1-0.8l0.1-0.7h13.4c6.2,0,10.4,5.4,9.1,12.5
+				s-7.3,12.5-13.5,12.5h-6.4L63.5,43.3z">
+    </path>
+    <path class="st1" d="M105.6,10.1l-7,14.5l-2.7-14.5H88l5.5,22.6c-1.5,2.9-3.3,3.9-6.6,3.9l-1.2,6.6c6.6,0.3,11.3-2.7,15.3-10.2
+				l12.1-23H105.6z">
+    </path>
+    <path class="st1" d="M19.4,33.8h8.1l-4.9-12.2c4-1.8,6.9-5.4,7.8-9.6C31.5,5.7,27.3,0.7,21,0.7H5.8L0,33.8h7.6
+				c1.5-8.7,3-17.4,4.5-26.1h7.7c2.1,0,3.5,1.8,3,4.3c-0.3,2.3-2.2,4.1-4.5,4.3h-6L19.4,33.8z">
+    </path>
+    <path class="st1" d="M47.2,27.8h-4.9c-3.3,0-5.2-2.2-4.6-5.8c0.5-3.3,3.3-5.8,6.6-5.8h4.9L47.2,27.8z M44.1,9.5
+				c-6.2,0-12.3,5.4-13.5,12.5s2.9,12.5,9.1,12.5h13.4l0.1-0.7l1.1-6.1l2-11.6l1.1-6.1l0.1-0.7L44.1,9.5L44.1,9.5z">
+    </path>
+   </g>
+  </g>
+ </g>
+</svg>
