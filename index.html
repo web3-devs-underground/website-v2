@@ -649,8 +649,8 @@
   <div class="stats">
     <div class="stat reveal"><div class="num">50+</div><div class="lbl">Events (Recorded)</div></div>
     <div class="stat reveal"><div class="num">120+</div><div class="lbl">Speakers</div></div>
-    <div class="stat reveal"><div class="num">12,000+</div><div class="lbl">Luma Subscribers</div></div>
-    <div class="stat reveal"><div class="num">1,500+</div><div class="lbl">Meetup Members</div></div>
+    <div class="stat reveal"><div class="num">12,000+</div><div class="lbl">Community Online</div></div>
+    <div class="stat reveal"><div class="num">3,200+</div><div class="lbl">Members in Israel</div></div>
   </div>
 
   <!-- our speakers -->
@@ -711,7 +711,7 @@
       <div class="t1">Watch</div>
       <div class="t2">Talks and panels from our meetups</div>
     </div>
-    <div class="yt-grid">
+    <div class="yt-grid" id="ytGrid">
       <a class="yt-card reveal" href="https://www.youtube.com/watch?v=eIHoHiY1gVw" target="_blank" rel="noopener noreferrer">
         <div class="yt-thumb"><img src="https://i.ytimg.com/vi/eIHoHiY1gVw/hqdefault.jpg" alt="" loading="lazy"><span class="yt-play"></span></div>
         <div class="yt-title">Q-Day for Bitcoin: What Breaks and How Migration Will Work</div>
@@ -727,6 +727,23 @@
     </div>
     <a class="btn btn-outline pad-sm" href="https://www.youtube.com/@web3devsunderground" target="_blank" rel="noopener noreferrer">View All</a>
   </section>
+  <script>
+  /* Watch — pull the latest videos from YouTube via /api/youtube; keep the built-in cards as fallback. */
+  (function(){
+    var grid = document.getElementById('ytGrid');
+    if(!grid || !window.fetch) return;
+    function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+    fetch('/api/youtube').then(function(r){return r.ok?r.json():null;}).then(function(d){
+      if(!d || !d.items || !d.items.length) return; // leave fallback cards in place
+      grid.innerHTML = d.items.slice(0,3).map(function(v){
+        return '<a class="yt-card reveal" href="'+esc(v.url)+'" target="_blank" rel="noopener noreferrer">'+
+          '<div class="yt-thumb"><img src="'+esc(v.thumb)+'" alt="" loading="lazy"><span class="yt-play"></span></div>'+
+          '<div class="yt-title">'+esc(v.title)+'</div></a>';
+      }).join('');
+      if(window.__reveal) window.__reveal(grid);
+    }).catch(function(){});
+  })();
+  </script>
 
   <!-- our team -->
   <section class="team">
@@ -786,7 +803,7 @@
         <div class="card card-216 reveal">
           <div class="avatar av-162"><img src="team/alon-ben-lavy.webp" loading="lazy" decoding="async" width="480" height="480" alt="Alon Ben Lavy"></div>
           <div class="info">
-            <div class="who"><div class="name">Alon Ben Lavy</div><div class="role">Community Manager</div></div>
+            <div class="who"><div class="name">Alon Ben Lavy</div><div class="role">Technical Manager</div></div>
             <div class="socials">
               <a class="soc" href="https://lotusresear.ch/" target="_blank" rel="noopener noreferrer" aria-label="Website"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm6.93 6h-2.95a15.7 15.7 0 00-1.38-3.56A8.03 8.03 0 0118.92 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14a7.96 7.96 0 010-4h3.38a16.6 16.6 0 000 4H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A8 8 0 015.08 16zm2.95-8H5.08a8 8 0 014.33-3.56A15.7 15.7 0 008.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66a14.8 14.8 0 010-4h4.68a14.8 14.8 0 010 4zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8 8 0 01-4.33 3.56zM16.36 14a16.6 16.6 0 000-4h3.38a7.96 7.96 0 010 4h-3.38z"/></svg></a>
               <a class="soc" href="https://www.linkedin.com/in/alon-ben-lavy/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
@@ -796,7 +813,7 @@
         <div class="card card-216 reveal">
           <div class="avatar av-162"><img src="team/alon-kivity.webp" loading="lazy" decoding="async" width="480" height="480" alt="Alon Kivity"></div>
           <div class="info">
-            <div class="who"><div class="name">Alon Kivity</div><div class="role">Community Dev Manager</div></div>
+            <div class="who"><div class="name">Alon Kivity</div><div class="role">Marketing Manager</div></div>
             <div class="socials">
               <a class="soc" href="https://x.com/alonkivity?s=21&t=HWW0pVp1Elph40xB_pGdmg" target="_blank" rel="noopener noreferrer" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"/></svg></a>
               <a class="soc" href="https://www.linkedin.com/in/alon-kivity/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
@@ -830,6 +847,7 @@
             </div>
           </div>
         </div>
+        <!-- Jeremy Musighi (BizDev Manager) temporarily hidden; will be re-added in a few months. To restore, delete this opening line and the closing comment marker beneath his card.
         <div class="card card-216 reveal">
           <div class="avatar av-162"><img src="team/jeremy-musighi.webp" loading="lazy" decoding="async" width="480" height="480" alt="Jeremy Musighi"></div>
           <div class="info">
@@ -839,6 +857,8 @@
             </div>
           </div>
         </div>
+        -->
+
         <div class="card card-216 reveal">
           <div class="avatar av-162"><img src="team/daria-nik.webp" loading="lazy" decoding="async" width="480" height="480" alt="Daria Nik"></div>
           <div class="info">
@@ -861,10 +881,10 @@
     <div class="about2 reveal">
       <span class="pill pill-red">Who We Are</span>
       <p class="ab-p">Founded in 2020 by Roy Osherove and Shauli Rejwan, Web3 Developers Underground is Israel&#39;s largest developer-led community for blockchain and decentralized-technology enthusiasts.</p>
-      <p class="ab-p">We unite over 2,000 members &mdash; engineers, founders, investors, academics and other Web3 practitioners &mdash; around a shared passion for building the future of decentralized systems.</p>
+      <p class="ab-p">We unite over 12,000 members online (3,200+ active in Israel) &mdash; engineers, founders, investors, academics and other Web3 practitioners &mdash; around a shared passion for building the future of decentralized systems.</p>
 
       <div class="ab-stats3">
-        <div class="s3"><div class="n">3200+</div><div class="l">Community Members</div></div>
+        <div class="s3"><div class="n">3,200+</div><div class="l">Members in Israel</div></div>
         <div class="s3"><div class="n">2020</div><div class="l">Founded</div></div>
         <div class="s3"><div class="n">Israel</div><div class="l">Based</div></div>
       </div>

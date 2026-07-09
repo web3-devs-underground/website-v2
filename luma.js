@@ -4,8 +4,9 @@
 // unreachable (offline / CORS), so the block never renders empty.
 (function(){
   "use strict";
-  var CAL_ID = "cal-iIQRUXB2ToNqfFJ";
-  var API = "https://api.lu.ma/calendar/get-items?calendar_api_id=" + CAL_ID + "&period=future&pagination_limit=6";
+  // Live events are fetched through our own /api/luma proxy (server-side), which
+  // avoids the browser CORS block that previously forced the snapshot fallback.
+  var API = "/api/luma";
   var MAX_CARDS = 3;
 
   // Snapshot fallback — refresh occasionally (last updated 2026-06-12).
