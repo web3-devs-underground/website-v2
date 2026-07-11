@@ -39,7 +39,7 @@
       {n:'Ethereum',    f:'speakers/ethereum.svg',           bg:'#0e0e0e'},
       {n:'Data-IL',     f:'speakers/datail.png',             bg:'#0e0e0e'},
       {n:'MAMRAM Seeds',f:'speakers/mamramseeds.svg',        bg:'#0e0e0e'},
-      {n:'Hackeriot',   f:'speakers/hackeriot.png',          bg:'#0e0e0e'},
+      {n:'1inch',       f:'speakers/1inch.png',              bg:'#ffffff'},
       {n:'Kaspa',       f:'speakers/kaspa.png',              bg:'#0e0e0e'},
       {n:'Utila',       f:'speakers/utila.png',              bg:'#0e0e0e'},
       {n:'Team8',       f:'speakers/team8.png',              bg:'#ffffff'},
@@ -47,6 +47,12 @@
       {n:'Partner',     f:'speakers/swap.png',               bg:'#011110'},
       {n:'Crypto Mondays', f:'speakers/cryptomondays.svg',   bg:'#0e0e0e'}
     ];
+
+    // The live list is managed in Notion ("Website: Speakers & Partners" database)
+    // and served by /api/speakers; the built-in SPEAKERS list above is only the
+    // fallback so the sphere never renders empty if Notion is slow or unreachable.
+    // Each entry: {n: name, f: image URL, bg: card colour}.
+    function init(SPEAKERS){
     var CARD_COUNT  = SPEAKERS.length;
     var FOCUS_SCALE = 2.0;     // size of the card once it reaches front-centre
     var SETTLE_BASE = 0.0009;  // smaller = snappier; ~0.45s ease-out settle
@@ -211,6 +217,25 @@
       requestAnimationFrame(frame);
     }
     requestAnimationFrame(frame);
+    } // end init()
+
+    // Boot: try the live Notion-backed list first (2.5s budget), then fall back.
+    // init() runs exactly once either way.
+    var booted=false;
+    function boot(list){ if(booted) return; booted=true; init(list); }
+    if(window.fetch){
+      var bootT=setTimeout(function(){ boot(SPEAKERS); }, 2500);
+      fetch('/api/speakers')
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(d){
+          clearTimeout(bootT);
+          var items=((d && d.items) || []).filter(function(s){ return s && s.n && s.f; });
+          boot(items.length >= 3 ? items : SPEAKERS);
+        })
+        .catch(function(){ clearTimeout(bootT); boot(SPEAKERS); });
+    }else{
+      boot(SPEAKERS);
+    }
   })();
 
 // Previous Events — interactive timeline gallery (embedded).
